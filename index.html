@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seals of Endeavor Calculator</title>
+  <link rel="stylesheet" href="./src/style/style.css">
+</head>
+<body>
+  <div class="App">
+    <div class="container">
+      <h1>Seals of Endeavor Calculator</h1>
+      <p class="error" id="errorMessage"></p>
+
+      <label>
+        Current Endeavors:
+        <input type="number" id="currentEndeavors">
+      </label>
+
+      <label>
+        Wanted Endeavors:
+        <input type="number" id="wantedEndeavors">
+      </label>
+
+      <label>
+        Last Weekly (0-6):
+        <input type="number" id="lastWeekly">
+      </label>
+
+      <button id="calculateButton">Calculate</button>
+      <button id="resetButton">Reset</button>
+
+      <div id="result" style="display: none;">
+        <h2 class="result">Calculation Result:</h2>
+        <p class="result">Days to Farm: <span id="resultDaysToFarm"></span></p>
+        <p class="result">Daily Completed: <span id="resultDailyCompleted"></span></p>
+        <p class="result">Weekly Completed: <span id="resultWeeklyCompleted"></span></p>
+        <p class="result">Total Endeavors: <span id="resultTotalEndeavors"></span></p>
+      </div>
+
+      <footer>
+        <p>Calculator by:<br/><span>_Momonga_ | unknown_player</span></p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="./src/script/app.js"></script>
+</body>
+</html>
